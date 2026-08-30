@@ -1,0 +1,8 @@
+Flox-lib==0.19.2
+youtube-search==2.2.0
+requests==2.27.1
+urllib3==1.26.15
+certifi==2022.12.7
+charset-normalizer==2.0.12
+idna==3.4
+chardet==4.0.0

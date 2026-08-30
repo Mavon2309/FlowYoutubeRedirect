@@ -1,0 +1,12 @@
+{
+  "ID": "1B14AD49687C4429A2D422296759D7F4",
+  "ActionKeyword": "yt",
+  "Name": "FlowYoutubeRedirect",
+  "Description": "Search YouTube in Flow Launcher or open searches directly on YouTube",
+  "Author": "Viraj Kapur",
+  "Version": "2.3.0",
+  "Language": "python",
+  "Website": "https://github.com/Mavon2309/FlowYoutubeRedirect",
+  "IcoPath": "./icon.png",
+  "ExecuteFileName": "run.py"
+}
