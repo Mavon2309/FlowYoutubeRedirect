@@ -17,10 +17,13 @@ plugin displays a fallback action that opens the same search on YouTube.
 
 ## Installation
 
-Download `FlowYoutubeRedirect.zip` from the private
-[GitHub releases page](https://github.com/Mavon2309/FlowYoutubeRedirect/releases),
-then install that ZIP in Flow Launcher. GitHub login is required to access the
-private repository.
+Install FlowYoutubeRedirect through Flow Launcher's Plugin Store once the
+submission is accepted. Until then, download `FlowYoutubeRedirect.zip` from the
+[GitHub releases page](https://github.com/Mavon2309/FlowYoutubeRedirect/releases)
+and install that ZIP in Flow Launcher.
+
+Updates published after Plugin Store acceptance are detected by Flow Launcher
+automatically.
 
 ## Releasing
 
@@ -34,3 +37,7 @@ FlowYoutubeRedirect is maintained by Viraj Kapur and is a fork of
 [FlowYouTube](https://github.com/Garulf/FlowYouTube), originally created by
 [Garulf](https://github.com/Garulf). The original project provided the core
 YouTube search integration on which this fork is based.
+
+## License
+
+FlowYoutubeRedirect is available under the [MIT License](LICENSE).
