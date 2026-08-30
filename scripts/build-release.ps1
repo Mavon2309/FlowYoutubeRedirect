@@ -16,7 +16,8 @@ try {
         'regions.json',
         'languages.json',
         'icon.png',
-        'README.md'
+        'README.md',
+        'LICENSE'
     )
 
     foreach ($file in $rootFiles) {
