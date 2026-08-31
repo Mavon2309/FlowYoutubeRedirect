@@ -1,6 +1,7 @@
 from pathlib import Path
 from subprocess import Popen
 from urllib.parse import urlencode
+from inspect import signature
 import json
 from flox import Flox, utils, clipboard, ICON_BROWSER, ICON_COPY
 
@@ -25,6 +26,17 @@ TEN_MINUTES = 600
 MAX_CACHE_AGE = TEN_MINUTES
 LANGUAGES_FILE = 'languages.json'
 REGIONS_FILE = 'regions.json'
+
+
+def youtube_search(query, limit, language=None, region=None):
+    """Run youtube-search across both of its published constructor APIs."""
+    supported_parameters = signature(YoutubeSearch).parameters
+    kwargs = {'max_results': limit}
+    if language and 'language' in supported_parameters:
+        kwargs['language'] = language
+    if region and 'region' in supported_parameters:
+        kwargs['region'] = region
+    return YoutubeSearch(query, **kwargs).to_dict()
 
 
 def get_thumbnail(id: str, thumb_type: str = DEFAULT_THUMB, ext: str = THUMB_EXT):
@@ -95,8 +107,8 @@ class FlowYoutubeRedirect(Flox):
     def search(self, query):
         limit = int(self.settings.get(
             'max_search_results', DEFAULT_SEARCH_LIMIT))
-        results = YoutubeSearch(
-            query, max_results=limit, language=self.language, region=self.region).to_dict()
+        results = youtube_search(
+            query, limit, language=self.language, region=self.region)
         for item in results:
             with utils.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
                 self.result(item, executor)
