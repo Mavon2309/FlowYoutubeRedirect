@@ -3,10 +3,10 @@
   "Name": "FlowYoutubeRedirect",
   "Description": "Search YouTube in Flow Launcher or open searches directly on YouTube",
   "Author": "Viraj Kapur",
-  "Version": "2.3.1",
+  "Version": "2.3.2",
   "Language": "python",
   "Website": "https://github.com/Mavon2309/FlowYoutubeRedirect",
-  "UrlDownload": "https://github.com/Mavon2309/FlowYoutubeRedirect/releases/download/v2.3.1/FlowYoutubeRedirect.zip",
+  "UrlDownload": "https://github.com/Mavon2309/FlowYoutubeRedirect/releases/download/v2.3.2/FlowYoutubeRedirect.zip",
   "UrlSourceCode": "https://github.com/Mavon2309/FlowYoutubeRedirect/tree/main",
   "IcoPath": "https://cdn.jsdelivr.net/gh/Mavon2309/FlowYoutubeRedirect@main/icon.png"
 }
